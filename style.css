@@ -28,6 +28,43 @@ header {
 
 }
 
+.dropdown-menu {
+    display: none;
+    /* Hide the dropdown by default */
+    position: absolute;
+    top: 70px;
+    /* Adjust based on the header height */
+    left: 20px;
+    /* Adjust to position the dropdown correctly */
+    background-color: #fff;
+    /* Background color of the dropdown */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    /* Padding around the menu */
+    z-index: 1000;
+    /* Ensure it's on top */
+    border-radius: 5px;
+    /* Rounded corners */
+}
+
+.dropdown-menu a {
+    display: block;
+    /* Make links block elements */
+    padding: 10px 20px;
+    /* Padding for links */
+    color: #333;
+    /* Link color */
+    text-decoration: none;
+    /* Remove underline */
+    font-weight: 400;
+    /* Font weight */
+}
+
+.dropdown-menu a:hover {
+    background-color: #f0f0f0;
+    /* Highlight on hover */
+}
+
 .lines {
     width: 100%;
     height: 20px;
@@ -250,6 +287,7 @@ header {
     gap: 10px;
     justify-content: center;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .more-button:hover {
@@ -259,4 +297,87 @@ header {
 .arrow-down {
     font-size: 12px;
     transform: rotate(90deg);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Partner Section */
+.partner-section {
+    background-color: #404040;
+    /* Dark background color */
+    padding: 30px 0;
+    text-align: center;
+}
+
+.partner-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Underline for "Partner" title */
+.partner-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: #d9534f;
+    /* Red underline */
+    margin: 8px auto 0;
+}
+
+/* Logos container */
+.logos-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+/* Individual Partner Logo */
+.partner-logo {
+    width: 100px;
+    /* Adjust width as needed */
+    height: auto;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.partner-logo:hover {
+    opacity: 1;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    margin-top: 20px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo-image {
+    width: 200px;
+    /* Adjust logo size */
+    height: auto;
+    margin-right: 15px;
+}
+
+.footer-text {
+    font-size: 24px;
+    color: #555;
+    text-align: left;
 }

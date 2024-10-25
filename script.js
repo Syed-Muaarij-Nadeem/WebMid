@@ -1,45 +1,4 @@
-// document.addEventListener("DOMContentLoaded", () => {
-//     const innovators = [
-//         {
-//             name: "Ahmed Al Jaber",
-//             title: "Sustainable Architect",
-//             description: "Pioneer in eco-friendly urban development.",
-//             image: "images/ahmed.jpg"
-//         },
-//         {
-//             name: "Fatima Al Mulla",
-//             title: "Technology Innovator",
-//             description: "Leading expert in AI-driven solutions.",
-//             image: "images/fatima.jpg"
-//         }
-//     ];
 
-//     const speakersList = document.querySelector('.speakers-list');
-//     innovators.forEach(innovator => {
-//         const innovatorDiv = document.createElement('div');
-//         innovatorDiv.classList.add('speaker');
-//         innovatorDiv.innerHTML = `
-//         <img src="${innovator.image}" alt="${innovator.name}">
-//         <h3>${innovator.name}</h3>
-//         <p>${innovator.title}</p>
-//         <p>${innovator.description}</p>
-//       `;
-//         speakersList.appendChild(innovatorDiv);
-//     });
-
-//     // Menu Toggle
-//     const hamburgerBtn = document.getElementById('hamburger-btn');
-//     const closeBtn = document.getElementById('close-btn');
-//     const mobileMenu = document.getElementById('mobile-menu');
-
-//     hamburgerBtn.addEventListener('click', () => {
-//         mobileMenu.style.display = 'block';
-//     });
-
-//     closeBtn.addEventListener('click', () => {
-//         mobileMenu.style.display = 'none';
-//     });
-// });
 document.addEventListener('DOMContentLoaded', function () {
     // Data objects for each person
     let Person1 = {
@@ -141,3 +100,19 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    const burgerIcon = document.getElementById('burger-icon');
+    const dropdownMenu = document.getElementById('dropdown-menu');
+
+    // Toggle dropdown menu visibility on burger icon click
+    burgerIcon.addEventListener('click', function () {
+        dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+    });
+
+    // Close the dropdown menu when clicking outside of it
+    document.addEventListener('click', function (event) {
+        if (!burgerIcon.contains(event.target) && !dropdownMenu.contains(event.target)) {
+            dropdownMenu.style.display = 'none'; // Hide the menu if clicked outside
+        }
+    });
+});
