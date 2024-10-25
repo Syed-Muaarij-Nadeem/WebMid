@@ -1,4 +1,6 @@
-.body {}
+.body {
+    font-family: "Lato", serif;
+}
 
 header {
     display: flex;
@@ -35,11 +37,38 @@ header {
     display: flex;
     flex-direction: column;
     margin-top: 20vh;
+    justify-content: left;
+    margin-top: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.heading {
+    font-family: "Lato", serif;
+    font-weight: 500;
+    font-size: 33px;
+    margin: 5px;
+    margin-bottom: 0;
+    color: rgb(255, 84, 36);
 }
 
 .headline h1 {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", serif;
+    font-weight: 900;
     font-size: 80px;
     margin: 5px;
+    margin-top: 3px;
     color: rgb(255, 84, 36);
+    justify-content: left;
+    text-align: left;
+}
+
+.detail {
+    background-color: rgb(238, 238, 238);
+    border: 2px solid white;
+    font-family: "Lato", serif;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 15px;
+
 }
