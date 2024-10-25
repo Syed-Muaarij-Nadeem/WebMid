@@ -1,5 +1,12 @@
-.body {
+* {
     font-family: "Lato", serif;
+}
+
+.First {
+    width: 100%;
+    height: 85vh;
+    background-image: url("mobile_intro_bg.png");
+    background-position: cover;
 }
 
 header {
@@ -16,7 +23,6 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    cursor: pointer;
     margin-top: 25px;
     margin-left: 35px;
 
@@ -68,7 +74,113 @@ header {
     border: 2px solid white;
     font-family: "Lato", serif;
     font-weight: 500;
+    font-size: 23px;
+    line-height: 30px;
+    padding: 15px 50px;
+    margin-top: 10px;
+
+}
+
+.heading2 {
+    font-family: "Lato", serif;
+    font-weight: 900;
+    font-size: 47px;
+    margin: 5px;
+    margin-top: 3px;
+    color: rgb(64, 64, 64);
+    justify-content: left;
+    text-align: left;
+}
+
+.detail2 {
+    font-family: "Lato", serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: rgb(64, 64, 64);
+}
+
+.Second {
+    display: flex;
+    font-family: "Lato", serif;
+    background-image: url("bgImg2.png");
+    height: 105vh;
+    color: white;
+}
+
+.main-Program {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.main-Program h2 {
+    font-family: "Lato", serif;
+    font-weight: 550;
+    font-size: 30px;
+    justify-self: center;
+    margin-top: 60px;
+
+}
+
+.line2 {
+    margin-left: 47%;
+    width: 70px;
+    height: 2px;
+    background-color: rgb(255, 84, 36);
+
+}
+
+.programs {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+
+
+.programs li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    background-color: rgba(221, 221, 221, 0.2);
+    padding: 20px 30px;
+    margin: 10px 20px;
+    border-radius: 10px;
+
+}
+
+.programs li h5 {
+    width: 25%;
+    color: rgb(255, 84, 36);
+    font-size: 30px;
+    font-weight: 700;
+    margin: 10px;
+    margin-right: 20px;
+    text-align: left;
+}
+
+.programs li img {
+    height: 100px;
+}
+
+.programs span {
+    text-align: left;
+    padding-left: 5px;
+    padding-right: 5px;
     font-size: 20px;
-    padding: 15px;
+}
+
+.btn1 {
+    margin-left: 15%;
+    margin-top: 20px;
+    width: 70%;
+    height: 110px;
+    background-color: rgb(255, 84, 36);
+    color: white;
+    font-size: 30px;
+    border-radius: 5px;
 
 }
